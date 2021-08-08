@@ -1,0 +1,92 @@
+﻿<!-- * IT Business Management v1.0.0
+  * Copyright 2019-2021 The MSOFTWARE (https://www.msoftware.com/)
+  * Licensed (https://www.msoftware.com/) -->
+
+<meta charset="utf-8" />
+<title>@ViewData["Title"] IT Business Management</title>
+<link rel="stylesheet" href="~/wwwroot/js/DBcon.js" />
+
+
+
+<div class="container-fluid mt-0">
+    <div class="card mb-4 wow fadeIn bg-m-0">
+
+        <!--Page Title/Button Bar-->
+        <div class="card-body d-sm-flex justify-content-between">
+
+            <h4 class="mb-2 mb-sm-0 pt-1">
+                <a href="">Cihazlar</a>
+            </h4>
+        </div>
+    </div>
+</div>
+
+
+<div class="container-fluid p-0">
+    <div class="card">
+        <table class="card-body">
+            <!-- Table body -->
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td>
+                        <a asp-area="" asp-controller="Device" asp-action="Computer">
+                            <i class="mr-3">
+                                <img src="~/images/computer-m.svg" alt="P-" width="330" height="187" viewBox="0 0 80 80" fill="none" />
+                            </i>
+                        </a>
+                    </td>
+
+                    <td>
+                        <a asp-area="" asp-controller="Device" asp-action="Printer">
+                            <i class="fa fa-pie-chart mr-3"><img src="~/images/printer-m.svg" alt="P-" width="330" height="187" viewBox="0 0 80 80" fill="none" /></i>
+                        </a>
+
+                    </td>
+
+                    <td>
+                        <a asp-area="" asp-controller="Device" asp-action="IpPort">
+                            <i class="fa fa-pie-chart mr-3"><img src="~/images/IP_Port-m.svg" alt="P-" width="330" height="187" viewBox="0 0 80 80" fill="none" /></i>
+                        </a>
+                    </td>
+
+                    <td>
+                        <a asp-area="" asp-controller="Device" asp-action="Ram">
+                            <i class="fa fa-pie-chart mr-3"><img src="~/images/Ram-m.svg" alt="P-" width="330" height="187" viewBox="0 0 80 80" fill="none" /></i>
+                        </a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td>
+                        <a asp-area="" asp-controller="Device" asp-action="Processor">
+                            <i class="fa fa-pie-chart mr-3"><img src="~/images/processor-m.svg" alt="P-" width="330" height="187" viewBox="0 0 80 80" fill="none" /></i>
+                        </a>
+                    </td>
+
+                    <td>
+                        <a asp-area="" asp-controller="Device" asp-action="OtherDevices">
+                            <i class="fa fa-pie-chart mr-3"><img src="~/images/Other-D-m.svg" alt="P-" width="330" height="187" viewBox="0 0 80 80" fill="none" /></i>
+                        </a>
+                    </td>
+
+                    <td>
+                        <a asp-area="" asp-controller="Device" asp-action="Toner">
+                            <i class="fa fa-pie-chart mr-3"><img src="~/images/Toner-m.svg" alt="P-" width="330" height="187" viewBox="0 0 80 80" fill="none" /></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a asp-area="" asp-controller="Device" asp-action="Services">
+                            <i class="fa fa-pie-chart mr-3"><img src="~/images/Service-m.svg" alt="P-" width="330" height="187" viewBox="0 0 80 80" fill="none" /></i>
+                        </a>
+                    </td>
+                   
+                </tr>
+            </tbody>
+
+        </table>
+        <!-- Table body -->
+    </div>
+</div>
+

@@ -1,0 +1,229 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] IT Business Management</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/dist/bootstrap-tagsinput.css">
+
+</head>
+
+<body>
+    <div class="container-main-a">
+        <!--Main Navigation-->
+        <header>
+
+            <!-- Navbar -->
+            <nav class="navbar fixed-top navbar-expand-lg navbar-expand navbar-light white scrolling-navbar">
+                <div class="container-fluid">
+
+                    <!-- Brand -->
+                    <a class="navbar-brand waves-effect" href="#" target="">
+                        <strong class="blue-text">IT Business Management</strong><br />
+                        <small>Yönetim paneline hoş geldiniz.</small>
+                    </a>
+
+                    <!-- Links -->
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                        <!-- Left -->
+                        <ul class="navbar-nav mr-auto">
+
+                            <li class="nav-item active">
+                                <a class="nav-link " href="#">
+                                    <span class="sr-only">(current)</span>
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link " href="#" target="_blank">
+                                </a>
+                            </li>
+
+                        </ul>
+                        <ul class="navbar-nav navbar-align">
+                            <!--Message-->
+                            <li class="nav-item dropdown">
+                                <a class="nav-icon dropdown-toggle" href="#" id="alertsDropdown" data-toggle="dropdown" aria-expanded="false">
+                                    <div class="position-relative">
+                                        <img src="~/images/message.png" width="24" height="24" viewBox="0 0 20 20" style="fill:none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bell-off align-middle">
+                                    </div>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right py-0" aria-labelledby="alertsDropdown">
+                                    <div class="dropdown-menu-header">
+                                        Mesajlar
+                                    </div>
+                                    <div class="list-group">
+                                        <a href="Message" class="list-group-item">
+                                            <div class="row no-gutters align-items-center">
+                                                <div class="col-10">
+                                                    <div class="text-dark" id="IncomingMessage" asp-area="#ß" asp-controller="Home" asp-action="Message" ><img src="~/images/message-icon.svg" alt="P-" width="10" height="10" style=" fill:none" />Raporlar hazır mı?</div>
+                                                    <div class="text-muted small mt-1"></div>
+                                                </div>
+
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="dropdown-menu-footer">
+                                        <a asp-controller="Home" asp-action="Message" asp-area="#" class="text-muted">Tümünü Görüntüle</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <!--Message-->
+                            <!--notification menü-->
+                            <li class="nav-item dropdown">
+                                <a class="nav-icon dropdown-toggle" href="#" id="alertsDropdown" data-toggle="dropdown" aria-expanded="false">
+                                    <div class="position-relative">
+                                        <img src="~/images/bell.png" width="24" height="24" viewBox="0 0 20 20" style="fill:none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bell-off align-middle">
+                                    </div>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right py-0" aria-labelledby="alertsDropdown">
+                                    <div class="dropdown-menu-header">
+                                        Bildirimler
+                                    </div>
+                                    <div class="list-group">
+                                        <a href="#" class="list-group-item">
+                                            <div class="row no-gutters align-items-center">
+                                                <div class="col-10">
+                                                    <div class="text-dark"></div>
+                                                    <div class="text-muted small mt-1"></div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <!--notification menü-->
+                            <!--user menü-->
+                            <li class="nav-item dropdown">
+                                <button class="nav-icon dropdownn-toggle d-inline-block d-sm-none" href="#" data-toggle="dropdown">
+                                    <img src="~/images" width="50" height="50" viewBox="0 0 50 50" style="fill:none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-settings align-middle"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+                                </button>
+                                <a class="nav-link dropdown-toggle d-none d-sm-inline-block" href="#" data-toggle="dropdown" aria-expanded="false">
+                                    <img src="~/images/DefaultUser-50.png" align="bottom" class="avatar img-fluid rounded-circle mr-1" alt="P-" /><span class="m-text-dark">Murat Korkmaz</span>
+                                </a>
+                                <div class="flex-shrink-0 dropdown-menu dropdown-menu-right">
+                                    <a class="dropdown-item" asp-controller="Home" asp-action="Profile"><svg alt="P-" src="#" width="30" height="30" viewBox="0 0 30 30" style="fill:none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user align-middle"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg> Profil</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" asp-controller="Home" asp-action="reporting">Raporlarım</a>
+                                    <a class="dropdown-item" asp-controller="Home" asp-action="Settings">Ayarlar</a>
+                                    <a class="dropdown-item" asp-controller="Home" asp-action="HelpCenter">Yardım</a>
+                                    <a class="dropdown-item" asp-controller="Home" asp-action="Privacy">Gizlilik</a>
+                                    <a class="dropdown-item" asp-controller="Home" asp-action="Logout">Çıkış</a>
+                                </div>
+                            </li>
+                            <!--user menü-->
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- Navbar -->
+            <!-- Sidebar -->
+            <div class="sidebar-fixed position-fixed fixed-top">
+                <!-- logo up block -->
+
+                <a class="logo-wrapper ">
+                    <!-- logo -->
+                    <img src="~/images/logo-raddlof.svg" class="img-fluid" alt="P-">
+                </a>
+                <div class="logoo-wrapper">
+                    <font>
+                        <br><br />
+                    </font>
+                </div>
+                <!-- logo up blo -->
+                <!-- sidebar item -->
+                <div class="lt-gist-group lisroup-flush">
+                    <a asp-area="" asp-controller="Home" asp-action="Index" class="list-group-item active ">
+                        <i class="fa fa-pie-chart mr-3"><img src="~/images/home-40.png" alt="P-" width="40" height="40" viewBox="0 0 40 40" style="fill:none" /></i>Ana Sayfa
+                    </a>
+                    <div class="wrapper-img">
+                        <font>
+                            <br><br />
+                        </font>
+                    </div>
+
+                    <a asp-area="" asp-controller="Home" asp-action="Department" class="list-group-item list-group-item-action ">
+                        <i class="fa fa-user mr-3"><img src="~/images/department-co.png" alt="P-" width="40" height="40" viewBox="0 0 40 40" style="fill:none" /></i>Departmanlar
+
+                    </a>
+                    <div class="wrapper-img">
+                        <font>
+                            <br><br />
+                        </font>
+                    </div>
+                    <a asp-area="" asp-controller="Home" asp-action="Devices" class="list-group-item list-group-item-action ">
+                        <i class="fa fa-table mr-3"><img src="~/images/devices-co.png" alt="P-" width="40" height="40" viewBox="0 0 40 40" style="fill:none" /></i>Cihazlar
+                    </a>
+                    <div class="wrapper-img">
+                        <font>
+                            <br><br />
+                        </font>
+                    </div>
+                    <a asp-area="" asp-controller="Home" asp-action="ToDoList" class="list-group-item list-group-item-action ">
+                        <i class="fa fa-map mr-3"><img src="~/images/work-list-co.png" alt="P-" width="40" height="40" viewBox="0 0 40 40" style="fill:none" /></i>İş/Proje Listesi
+                    </a>
+                    <div class="wrapper-img">
+                        <font>
+                            <br><br />
+                        </font>
+                    </div>
+                    <a asp-area="" asp-controller="Home" asp-action="report" class="list-group-item list-group-item-action ">
+                        <i class="fa fa-money mr-3"><img src="~/images/bs-report-50.png" alt="p-" width="40" height="40" viewBox="0 0 40 40" style="fill:none">Raporlar</i>
+                    </a>
+                    <div class="wrapper-img">
+                        <font>
+                            <br><br />
+                        </font>
+                    </div>
+                    <a asp-area="" asp-controller="Home" asp-action="RequirementList" class="list-group-item list-group-item-action ">
+                        <i class="fa fa-money mr-3"><img src="~/images/ih-list-co.png" alt="P-" width="40" height="40" viewBox="0 0 40 40" style="fill:none" /></i>İhtiyaç Listesi
+                    </a>
+                    <div class="wrapper-img">
+                        <font>
+                            <br><br />
+                        </font>
+                    </div>
+                    <a asp-area="" asp-controller="Home" asp-action="Calendar" class="list-group-item list-group-item-action ">
+                        <i class="fa fa-money mr-3"><img src="~/images/calendar-co.png" alt="P-" width="40" height="40" viewBox="0 0 40 40" style="fill:none" /></i>Takvim
+                    </a>
+                    <div class="wrapper-img">
+                        <font>
+                            <br><br />
+                        </font>
+                    </div>
+                </div>
+                <a asp-area="" asp-controller="Home" asp-action="AdvancePayment" class="list-group-item list-group-item-action ">
+                    <i class="fa fa-money mr-3"><img src="~/images/payment-40.png" alt="P-" width="40" height="40" viewBox="0 0 40 40" style="fill:none" /></i>Avanslar
+                </a>
+            </div>
+
+            <!-- Sidebar -->
+        </header>
+        <!--Main Navigation-->
+        <!--Main layout-->
+        <main class="pt-5 mx-lg-5">
+            @RenderBody()
+        </main>
+        <!--Main layout-->
+        <!--Footer-->
+        <footer class="footer text-center font-small primary-color-dark darken-2 mb-0 wow fadeIn">
+            <!--Copyright-->
+            <div class="footer-copyright pb-0">
+                © 2020 Copyright:
+                <a href="#" target="_blank">RADDLOF</a>
+            </div>
+            <!--/.Copyright-->
+        </footer>
+        <!--/.Footer-->
+    </div>
+    <script src="~/lib/js/bootstrap.js"></script>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

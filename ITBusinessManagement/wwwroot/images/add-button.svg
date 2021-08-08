@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="57" height="51" viewBox="0 0 57 51">
+  <defs>
+    <filter id="Rectangle_1" x="0" y="0" width="57" height="51" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Add_button" data-name="Add button" transform="translate(9 6)">
+    <g transform="matrix(1, 0, 0, 1, -9, -6)" filter="url(#Rectangle_1)">
+      <rect id="Rectangle_1-2" data-name="Rectangle 1" width="39" height="33" rx="10" transform="translate(9 6)" fill="#157ffb"/>
+    </g>
+    <line id="Line_1" data-name="Line 1" y2="25" transform="translate(19.5 3.5)" fill="none" stroke="#fff" stroke-width="3"/>
+    <line id="Line_2" data-name="Line 2" y2="23" transform="translate(31 16.133) rotate(90)" fill="none" stroke="#fff" stroke-width="3"/>
+  </g>
+</svg>

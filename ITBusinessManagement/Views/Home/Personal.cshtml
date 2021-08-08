@@ -1,0 +1,121 @@
+﻿
+<div class="container-fluid ">
+    <div class="container-fluid mt-5">
+        <div class="card mb-4 wow fadeIn bg-m-0">
+
+            <!--Page Title/Button Bar-->
+            <div class="card-body d-sm-flex justify-content-between">
+
+                <h3 class="mb-2 mb-sm-0 pt-1">
+                    <a>Personel Ekle</a>
+                </h3>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-sm-3">
+            <!--left col-->
+            <div class="text-center">
+                <br>
+                <img src="~/images/DefaultUser-128.png" width="200" height="200" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-settings align-middle"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+                <br>
+
+                <h6>Farklı bir fotoğraf yükleyin ...</h6><br>
+                <input type="file" class="text-center center-block file-upload">
+            </div><br>
+        </div>
+
+        <div class="col-sm-9">
+            <div class="container-fluid">
+                <div class="card">
+                    <table class="card-body">
+                        <!-- Table body -->
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="tab-pane active" id="Personal">
+
+                                        <div class="form-group">
+                                            <div class="col-xs-6">
+                                                <h5><label for="first_name">Ad</label></h5>
+                                                <input type="text" class="form-control" name="first_name" id="first_name" placeholder="Ad" title="Ad girin.">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <div class="col-xs-6">
+                                                <h5><label for="last_name">Soyad</label></h5>
+                                                <input type="text" class="form-control" name="last_name" id="last_name" placeholder="Soyad" title="Soyad girin.">
+                                            </div>
+                                        </div>
+
+
+                                        <div class="form-group">
+                                            <div class="col-xs-6">
+                                                <h5><label for="W_Position">Pozisyon</label></h5>
+                                                <input type="text" class="form-control" name="position" id="position" placeholder="Mühendis vb." title="pozisyon giriniz.">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <div class="col-xs-6">
+                                                <h5><label for="phone">Sabit telefon</label></h5>
+                                                <input type="text" class="form-control" name="phone" id="phone" placeholder="Telefon numarası girin" title="Telefon numaranızı girin.">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <div class="col-xs-6">
+                                                <h5><label for="mobile">Telefon</label></h5>
+                                                <input type="text" class="form-control" name="mobile" id="mobile" placeholder="Telefon numarası girin" title="Telefon numaranızı girin.">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <div class="col-xs-6">
+                                                <h5><label for="email">E-posta</label></h5>
+                                                <input type="email" class="form-control" name="email" id="email" placeholder="örnek@email.com" title="E-posta giriniz.">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <div class="col-xs-6">
+                                                <h5><label for="password">Şifre</label></h5>
+                                                <input type="password" class="form-control" name="Şifrre" id="password" placeholder="Şifre" title="Şifre girin.">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <div class="col-xs-6">
+                                                <h5><label for="password2">Şifre</label></h5>
+                                                <input type="password" class="form-control" name="password2" id="password2" placeholder="Şifreyi tekrar girin" title="şifreyi tekrar girin.">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <div class="col-xs-12">
+
+                                                <button class="lt-gist-group list-group-flush btn-primary btn-sm" type="submit">Kaydet</button>
+
+                                                <button class="lt-gist-group list-group-flush btn btn-secondary btn-sm" type="reset">Sıfırla</button>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div><!--/tab-content-->
+
+            </div><!--/col-9-->
+
+        </div><!--/row-->
+
+    </div>
+
+</div>

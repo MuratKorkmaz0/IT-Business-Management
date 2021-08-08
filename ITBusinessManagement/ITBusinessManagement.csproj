@@ -1,0 +1,53 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Views\Account\" />
+    <Folder Include="Views\Device\" />
+    <Folder Include="Views\RequirementList\" />
+    <Folder Include="Views\WorkList\" />
+    <Folder Include="Views\Stock\" />
+    <Folder Include="wwwroot\images\" />
+    <Folder Include="Views\Department\" />
+    <Folder Include="Calendar\" />
+    <Folder Include="Data\" />
+    <Folder Include="Repositories\" />
+    <Folder Include="Views\Computer\" />
+    <Folder Include="Security\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="wwwroot\images\main_2.png" />
+    <Content Remove="wwwroot\images\main_3.png" />
+    <Content Remove="wwwroot\images\main_ico-40.png" />
+    <Content Remove="wwwroot\images\main_light.png" />
+    <Content Remove="wwwroot\images\main-po.jpg" />
+    <Content Remove="wwwroot\favicon.ico" />
+    <Content Remove="Views\Home\reports.cshtml" />
+    <Content Remove="wwwroot\images\col-bg-0.svg" />
+    <Content Remove="wwwroot\images\Service-m.svg" />
+    <Content Remove="wwwroot\images\processor-m.svg" />
+    <Content Remove="wwwroot\images\Toner-m.svg" />
+    <Content Remove="wwwroot\images\Other-D-m.svg" />
+    <Content Remove="wwwroot\images\Ram-m.svg" />
+    <Content Remove="wwwroot\images\printer-m.svg" />
+    <Content Remove="wwwroot\images\computer-m.svg" />
+    <Content Remove="wwwroot\images\IP_Port-m.svg" />
+    <Content Remove="wwwroot\images\logo-ab.svg" />
+    <Content Remove="wwwroot\images\addFile.png" />
+    <Content Remove="Views\Home\Password.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="wwwroot\images\main_2.png" />
+    <None Include="wwwroot\images\main_3.png" />
+    <None Include="wwwroot\images\main_ico-40.png" />
+    <None Include="wwwroot\images\main_light.png" />
+    <None Include="wwwroot\images\main-po.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Westwind.AspNetCore.LiveReload" Version="0.3.1" />
+    <PackageReference Include="Webpack" Version="4.0.0" />
+  </ItemGroup>
+</Project>

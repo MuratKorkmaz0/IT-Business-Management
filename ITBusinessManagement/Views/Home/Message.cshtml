@@ -1,0 +1,320 @@
+﻿<!-- * IT Business Management v1.0.0
+  * Copyright 2019-2021 The MSOFTWARE (https://www.msoftware.com/)
+  * Licensed (https://www.msoftware.com/) -->
+
+<meta charset="utf-8" />
+
+<div class="container-fluid mt-0">
+    <div class="card mb-4 wow fadeIn bg-m-0">
+
+        <!--Page Title/Button Bar-->
+        <div class="card-body d-sm-flex justify-content-between">
+
+            <h4 class="mb-2 mb-sm-0 pt-1">
+                <a href="">Mesajlar</a>
+            </h4>
+        </div>
+    </div>
+</div>
+
+
+<div class="container-fluid p-0">
+    <!--Message card-->
+    <div class="card">
+        <div class="row g-0">
+            <!--Message List-->
+            <div class="col-12 col-lg-5 col-xl-3 border-end">
+                <div class="px-4 d-none d-md-block">
+                    <div class="d-flex align-items-start align-items-center">
+                        <!--search input-->
+                        <div class="flex-grow-1">
+                            <input type="text" class="form-control my-3" placeholder="Ara...">
+                        </div>
+                        <!--search input-->
+                    </div>
+                </div>
+                <!--message-->
+                <div href="#" class="list-group-item list-group-item-action border-0">
+                    <div class="d-flex align-items-start">
+                        <img src="~/images/DefaultUser-50.png" class="rounded-circle me-1" alt="Deniz Doğulu" width="40" height="40">
+                        <div class="flex-grow-1 ms-3">
+                            Deniz Doğulu
+                            <div class="small"><span class="fas fa-circle chat-online"></span> Online</div>
+
+                        </div>
+                        <!--Delete message drop menü-->
+                        <div class="card-actions float-end">
+                            <div class="nav-item dropdown show">
+                                <a href="#" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false" class="nav-icon dropdown-toggle" data-toggle="dropdown" aria-haspopup="true">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal align-middle"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
+                                </a>
+
+                                <div class="dropdown-menu dropdown-menu-end">
+                                    <a class="dropdown-item" onclick="remove" href="#">Sil</a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!--Delete message drop menü-->
+                    </div>
+                </div>
+                <!--message-->
+
+
+                <hr class="d-block d-lg-none mt-1 mb-0">
+            </div>
+            <!--Message List-->
+            <!--Message Box-->
+            <div class="col-12 col-lg-7 col-xl-9">
+
+                <div class="py-2 px-4 border-bottom d-none d-lg-block">
+                    <div class="d-flex align-items-start align-items-center py-1">
+                        <div class="position-relative">
+                            <img src="~/images/DefaultUser-50.png" class="rounded-circle me-1" alt="P-" width="40" height="40">
+                        </div>
+                        <div class="flex-grow-1 ps-3">
+                            <strong>Deniz Doğulu</strong>
+                            <div class="text-muted small"><em></em></div>
+                        </div>
+                        <!--Add message-->
+                        <button type="button" class="btn" data-toggle="modal" data-target="#exampleModal">
+                            <i>
+                                <img src="../images/add-button.png" alt="P-" fill="transparent" />
+                            </i>
+                        </button>
+                        <!--Add message-->
+                    </div>
+                </div>
+
+
+                <div class="position-relative">
+                    <div class="chat-messages p-4">
+
+                        <div class="chat-message-right pb-4">
+                            <div>
+                                <img src="~/images/DefaultUser-50.png" class="rounded-circle me-1" alt="P-" width="40" height="40">
+                                <div class="text-muted small text-nowrap mt-2">2:33 am</div>
+                            </div>
+                            <div class="flex-shrink-1 bg-light rounded py-2 px-3 me-3">
+                                <div class="fw-bold mb-1">Sen</div>
+                                Lorem ipsum dolor sit amet, vis erat denique in, dicunt prodesset te vix.
+                            </div>
+                        </div>
+
+                        <div class="chat-message-left pb-4">
+                            <div>
+                                <img src="~/images/DefaultUser-50.png" class="rounded-circle me-1" alt="P-n" width="40" height="40">
+                                <div class="text-muted small text-nowrap mt-2">2:34 am</div>
+                            </div>
+                            <div class="flex-shrink-1 bg-light rounded py-2 px-3 ms-3">
+                                <div class="fw-bold mb-1">Deniz Doğulu</div>
+                                Sit meis deleniti eu, pri vidit meliore docendi ut, an eum erat animal commodo.
+                            </div>
+                        </div>
+
+                        <div class="chat-message-right pb-4">
+                            <div>
+                                <img src="~/images/DefaultUser-50.png" class="rounded-circle me-1" alt="P-" width="40" height="40">
+                                <div class="text-muted small text-nowrap mt-2">2:35 am</div>
+                            </div>
+                            <div class="flex-shrink-1 bg-light rounded py-2 px-3 me-3">
+                                <div class="fw-bold mb-1">Sen</div>
+                                Cum ea graeci tractatos.
+                            </div>
+                        </div>
+
+                        <div class="chat-message-left pb-4">
+                            <div>
+                                <img src="~/images/DefaultUser-50.png" class="rounded-circle me-1" alt="P-" width="40" height="40">
+                                <div class="text-muted small text-nowrap mt-2">2:36 am</div>
+                            </div>
+                            <div class="flex-shrink-1 bg-light rounded py-2 px-3 ms-3">
+                                <div class="fw-bold mb-1">Deniz Doğulu</div>
+                                Sed pulvinar, massa vitae interdum pulvinar, risus lectus porttitor magna, vitae commodo lectus mauris et velit. Proin ultricies placerat imperdiet. Morbi varius
+                                quam ac venenatis tempus.
+                            </div>
+                        </div>
+
+                        <div class="chat-message-left pb-4">
+                            <div>
+                                <img src="~/images/DefaultUser-50.png" class="rounded-circle me-1" alt="P-" width="40" height="40">
+                                <div class="text-muted small text-nowrap mt-2">2:37 am</div>
+                            </div>
+                            <div class="flex-shrink-1 bg-light rounded py-2 px-3 ms-3">
+                                <div class="fw-bold mb-1">Deniz Doğulu</div>
+                                Cras pulvinar, sapien id vehicula aliquet, diam velit elementum orci.
+                            </div>
+                        </div>
+
+                        <div class="chat-message-right pb-4">
+                            <div>
+                                <img src="~/images/DefaultUser-50.png" class="rounded-circle me-1" alt="P-" width="40" height="40">
+                                <div class="text-muted small text-nowrap mt-2">2:38 am</div>
+                            </div>
+                            <div class="flex-shrink-1 bg-light rounded py-2 px-3 me-3">
+                                <div class="fw-bold mb-1">Sen</div>
+                                Lorem ipsum dolor sit amet, vis erat denique in, dicunt prodesset te vix.
+                            </div>
+                        </div>
+
+                        <div class="chat-message-left pb-4">
+                            <div>
+                                <img src="~/images/DefaultUser-50.png" class="rounded-circle me-1" alt="P-" width="40" height="40">
+                                <div class="text-muted small text-nowrap mt-2">2:39 am</div>
+                            </div>
+                            <div class="flex-shrink-1 bg-light rounded py-2 px-3 ms-3">
+                                <div class="fw-bold mb-1">Deniz Doğulu</div>
+                                Sit meis deleniti eu, pri vidit meliore docendi ut, an eum erat animal commodo.
+                            </div>
+                        </div>
+
+                        <div class="chat-message-right pb-4">
+                            <div>
+                                <img src="~/images/DefaultUser-50.png" class="rounded-circle me-1" alt="P-" width="40" height="40">
+                                <div class="text-muted small text-nowrap mt-2">2:40 am</div>
+                            </div>
+                            <div class="flex-shrink-1 bg-light rounded py-2 px-3 me-3">
+                                <div class="fw-bold mb-1">Sen</div>
+                                Cum ea graeci tractatos.
+                            </div>
+                        </div>
+
+                        <div class="chat-message-right pb-4">
+                            <div>
+                                <img src="~/images/DefaultUser-50.png" class="rounded-circle me-1" alt="P-" width="40" height="40">
+                                <div class="text-muted small text-nowrap mt-2">2:41 am</div>
+                            </div>
+                            <div class="flex-shrink-1 bg-light rounded py-2 px-3 me-3">
+                                <div class="fw-bold mb-1">Sen</div>
+                                Morbi finibus, lorem id placerat ullamcorper, nunc enim ultrices massa, id dignissim metus urna eget purus.
+                            </div>
+                        </div>
+
+                        <div class="chat-message-left pb-4">
+                            <div>
+                                <img src="~/images/DefaultUser-50.png" class="rounded-circle me-1" alt="P-" width="40" height="40">
+                                <div class="text-muted small text-nowrap mt-2">2:42 am</div>
+                            </div>
+                            <div class="flex-shrink-1 bg-light rounded py-2 px-3 ms-3">
+                                <div class="fw-bold mb-1">Deniz Doğulu</div>
+                                Sed pulvinar, massa vitae interdum pulvinar, risus lectus porttitor magna, vitae commodo lectus mauris et velit. Proin ultricies placerat imperdiet. Morbi varius
+                                quam ac venenatis tempus.
+                            </div>
+                        </div>
+
+                        <div class="chat-message-right pb-4">
+                            <div>
+                                <img src="~/images/DefaultUser-50.png" class="rounded-circle me-1" alt="P-" width="40" height="40">
+                                <div class="text-muted small text-nowrap mt-2">2:43 am</div>
+                            </div>
+                            <div class="flex-shrink-1 bg-light rounded py-2 px-3 me-3">
+                                <div class="fw-bold mb-1">Sen</div>
+                                Lorem ipsum dolor sit amet, vis erat denique in, dicunt prodesset te vix.
+                            </div>
+                        </div>
+
+                        <div class="chat-message-left pb-4">
+                            <div>
+                                <img src="~/images/DefaultUser-50.png" class="rounded-circle me-1" alt="P-" width="40" height="40">
+                                <div class="text-muted small text-nowrap mt-2">2:44 am</div>
+                            </div>
+                            <div class="flex-shrink-1 bg-light rounded py-2 px-3 ms-3">
+                                <div class="fw-bold mb-1">Deniz Doğulu</div>
+                                Sit meis deleniti eu, pri vidit meliore docendi ut, an eum erat animal commodo.
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="flex-grow-0 py-3 px-4 border-top">
+                    <div class="input-group">
+                        <!--AddFile-->
+                        <div class="position-relative">
+                        <img src="/images/addFile.png" data-toggle="modal" data-target="#uploadModal" width="60" height="40" alt="P-" style="background-color:transparent" viewbox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="btn-a feather feather-bell-off align-middle">
+                        </div>
+                        <!--AddFile-->
+                        <!--Message Input & Send Button-->
+                        <input type="text" class="form-control" placeholder="Mesaj yaz..">
+                        <button class="btn-a ist-group-item active waves-effect btn-primary btn-sm">Gönder</button>
+                        <!-- Modal -->
+                        <div id="uploadModal" class="modal fade" role="dialog">
+                            <div class="modal-dialog">
+
+                                <!-- Modal content-->
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Yüklemek için dosya seçiniz.</h4>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <!-- Form -->
+                                        <form method='post' action='' enctype="multipart/form-data">
+                                            Select file : <input type='file' name='file' id='file' class='form-control'><br>
+                                            <input type='button' class='btn btn-info' value='Upload' id='btn_upload'>
+                                        </form>
+
+                                        <!-- Preview-->
+                                        <div id='preview'></div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <!--Message Input & Send Button-->
+                    </div>
+                </div>
+
+            </div>
+            <!--Message Box-->
+
+        </div>
+    </div>
+    <!--Message card-->
+    <div id="select-images"></div>
+    <script><script>
+
+            var selectImages = [];
+
+            function selectFile() {
+                $.FileDialog({
+                    "accept": "image/*"
+                }).on("files.bs.filedialog", function (event) {
+                    var html = "";
+                    for (var a = 0; a < event.files.length; a++) {
+                        selectFile.push(event.files[a]);
+                        html += "<img src = '"event.files[a].content + "' style = widht:300px; margin = 10px;'>";
+
+                        document.getElementById("selectImages").innerHTML = html;
+                    }
+                });
+            }
+    </script>
+    <!--Message function-->
+    <script>
+        function newMessage() {
+        chat - message = $(".form-control input").val();
+            if($.trim(chat-message) == '') {
+                return false;
+            }
+            $('<div class="chat-message-left"><img src="~/images/DefaultUser-50.png" alt="P-" />' + chat-message + '</div>').appendTo($('.chat-messages div'));
+            $('.form-control input').val(null);
+            $('.contact.active .preview').html('<span>You: </span>' + chat-message);
+            $(".chat-messages").animate({scrollTop: $(document).height() }, "fast");
+         };
+
+         $('.submit').click(function() {
+                newMessage();
+         });
+
+         $(window).on('keydown', function(e) {
+                if (e.which == 13) {
+                newMessage();
+                 return false;
+          }
+        });
+         //# sourceURL=pen.js
+    </script>
+
+</div>

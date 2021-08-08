@@ -1,0 +1,71 @@
+﻿<div class="container-fluid mt-5 ">
+    <div class="card mb-4 wow fadeIn bg-m-0">
+
+        <!--Page Title/Button Bar-->
+        <div class="card-body d-sm-flex justify-content-between">
+
+            <h4 class="mb-2 mb-sm-0 pt-1">
+                <a href="">Profil</a>
+            </h4>
+
+            <div class="lt-gist-group lisroup-flush">
+                <a id="add" asp-controller="Home" asp-action="Personal" asp-area="" class="list-group-item active waves-effect">Personel Ekle</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid p-0">
+    <div class="card">
+        <form method="post">
+            <div class="card mb-3">
+                <div class="card-header">
+                    <div class="col-md-2">
+                        <input asp-controller="Home" asp-action="Settings" type="submit" class="profile-edit-btn" name="btnAddMore" value="Profili Düzenle" />
+                    </div>
+                </div>
+                
+                <div class="card-body d-flex flex-column align-items-center text-center">
+                    <img src="~/images/DefaultUser-128.png" width="250" height="250" viewBox="0 0 250 250" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-settings align-middle"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+                    <h5 class="card-title mb-0">Murat Korkmaz</h5>
+                    <div class="text-muted mb-2">Lead Developer</div>
+
+                    <div>
+                        <button class="btn-primary btn-sm" asp-controller="Home" asp-action="Message"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg> Mesaj gönder</button>
+                    </div>
+
+                </div>
+                <hr class="my-0">
+                <div class="card-body">
+                    <h5 class="h6 card-title">Yetenekler</h5>
+                    <a href="#" class="badge bg-primary me-1 my-1">HTML</a>
+                    <a href="#" class="badge bg-primary me-1 my-1">JavaScript</a>
+                    <a href="#" class="badge bg-primary me-1 my-1">Sass</a>
+                    <a href="#" class="badge bg-primary me-1 my-1">UI</a>
+                    <a href="#" class="badge bg-primary me-1 my-1">UX</a>
+                </div>
+                <hr class="my-0">
+                <div class="card-body">
+                    <h5 class="h6 card-title">Hakkında</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-1"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home feather-sm me-1"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg> Lives in <a href="#">San Francisco, SA</a></li>
+
+                        <li class="mb-1"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-briefcase feather-sm me-1"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg> Works at <a href="#">GitHub</a></li>
+                        <li class="mb-1"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin feather-sm me-1"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> From <a href="#">Boston</a></li>
+                    </ul>
+                </div>
+                <hr class="my-0">
+                <div class="card-body">
+                    <h5 class="h6 card-title">Sosyal</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-1"><span class="fas fa-globe fa-fw me-1"></span> <a href="#">staciehall.co</a></li>
+                        <li class="mb-1"><span class="fab fa-twitter fa-fw me-1"></span> <a href="#">Twitter</a></li>
+                        <li class="mb-1"><span class="fab fa-facebook fa-fw me-1"></span> <a href="#">Facebook</a></li>
+                        <li class="mb-1"><span class="fab fa-instagram fa-fw me-1"></span> <a href="#">Instagram</a></li>
+                        <li class="mb-1"><span class="fab fa-linkedin fa-fw me-1"></span> <a href="#">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div> 
+        </form>
+    </div>
+</div>

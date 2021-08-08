@@ -1,0 +1,146 @@
+﻿<!-- * IT Business Management v1.0.0
+  * Copyright 2019-2021 The MSOFTWARE (https://www.msoftware.com/)
+  * Licensed (https://www.msoftware.com/) -->
+
+
+<div class="container-fluid mt-0">
+    <div class="card mb-4 wow fadeIn bg-m-0">
+
+        <!--Page Title/Button Bar-->
+        <div class="card-body d-sm-flex justify-content-between">
+
+            <h4 class="mb-2 mb-sm-0 pt-1">
+                <a>Profili Düzenle</a>
+            </h4>
+
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-3 col-xl-2">
+
+        <div class="card-d">
+            <div class="card-header">
+                <h5 class="card-title mb-0">Profil Ayarları</h5>
+            </div>
+
+            <div class="list-group list-group-flush" role="tablist">
+                <a class="list-group-item list-group-item-action active" data-bs-toggle="list" href="#account" role="tab" aria-selected="true">
+                    Hesap
+                </a>
+                <a class="list-group-item list-group-item-action data-bs-toggle" data-bs-toggle="list" href="#password" role="tab" aria-selected="false">
+                    Parola
+                </a>
+                <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#" role="tab" aria-selected="false">
+                    Gizlilik ve güvenlik
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-9 col-xl-10">
+        <div class="tab-content">
+            <div class="tab-pane fade active show" id="account" role="tabpanel">
+
+                <div class="card-d">
+                    <div class="card-header">
+                       
+                        <h5 class="card-title mb-0">Kişisel Bilgiler</h5>
+                    </div>
+                    <div class="card-body">
+                        <form>
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <div class="mb-3">
+                                        <label for="inputUsername" class="form-label">Kullanıcı Adı</label>
+                                        <input type="text" class="form-control" id="inputUsername" placeholder="Kullanıcı adınız">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="inputUsername" class="form-label">Hakkında</label>
+                                        <textarea rows="2" class="form-control" id="inputBio" placeholder="Kendin hakkında bir şeyler söyle.."></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="text-center">
+                                        <img alt="Chris Wood" src="~/images/DefaultUser-128.png" class="rounded-circle img-responsive mt-2" width="128" height="128">
+                                        <div class="mt-2">
+                                            <span class="ist-group-item active waves-effect btn-primary btn-sm"><i class="fas fa-upload"></i> Upload</span>
+                                        </div>
+                                        <small>En iyi sonuçlar için, .jpg biçiminde en az 128 piksele 128 piksellik bir resim kullanın</small>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button type="submit" class="ist-group-item active waves-effect btn-primary btn-sm">Kaydet</button>
+                        </form>
+
+                    </div>
+                </div><br />
+
+                <div class="card-d">
+                    <div class="card-header">
+                        <h5 class="card-title mb-0">Kişisel Bilgiler</h5>
+                    </div>
+                    <div class="card-body">
+                        <form>
+                            <div class="row">
+                                <div class="mb-3 col-md-6">
+                                    <label for="inputFirstName" class="form-label">Ad</label>
+                                    <input type="text" class="form-control" id="Adınız" placeholder="adınız">
+                                </div>
+                                <div class="mb-3 col-md-6">
+                                    <label for="inputLastName" class="form-label">Soyad</label>
+                                    <input type="text" class="form-control" id="Soyadınız" placeholder="soyadınız">
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="inputEmail4" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                            </div>
+                            
+                            <div class="row">
+                                <div class="mb-3 col-md-6">
+                                    <label for="inputCity" class="form-label">Şehir</label>
+                                    <input type="text" class="form-control" id="inputCity">
+                                </div>
+                                <div class="mb-3 col-md-2">
+                                    <label for="inputZip" class="form-label">Zip</label>
+                                    <input type="text" class="form-control" id="inputZip">
+                                </div>
+                            </div>
+                            <button type="submit" class="ist-group-item active waves-effect btn-primary btn-sm">Kaydet</button>
+                        </form>
+
+                    </div>
+                </div><br />
+
+            </div>
+            <div class="tab-pane fade" id="password" role="tabpanel">
+                <div class="card-d">
+                    <div class="card-body">
+                        <h5 class="card-title">Parola</h5>
+
+                        <form>
+                            <div class="mb-3">
+                                <label for="inputPasswordCurrent" class="form-label">Mevcut Parola</label>
+                                <input type="password" class="form-control" id="inputPasswordCurrent">
+                                <small><a href="#">Parolanızı mı unuttunuz?</a></small>
+                            </div>
+                            <div class="mb-3">
+                                <label for="inputPasswordNew" class="form-label">Yeni Parola</label>
+                                <input type="password" class="form-control" id="inputPasswordNew">
+                            </div>
+                            <div class="mb-3">
+                                <label for="inputPasswordNew2" class="form-label">Parolayı Onayla</label>
+                                <input type="password" class="form-control" id="inputPasswordNew2">
+                            </div>
+                            <button type="submit" class="ist-group-item active waves-effect btn-primary btn-sm">Kaydet</button>
+                        </form>
+
+                    </div>
+                </div>
+            </div><br />
+        </div>
+    </div>
+</div>
